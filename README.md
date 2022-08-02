@@ -1,2 +1,2 @@
 # groceryList
-This is a grocery list that was taken from a standard to-do list.
+This was a standard to-do list that was changed to a grocery list.
