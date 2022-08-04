@@ -7,7 +7,7 @@
 }
 body{
     background: rgb(248, 232, 11);
-    background: linear-gradient(139deg, rgb(219, 202, 47) 0%, rgb(255, 140, 0, 0.856) 100%);
+    background: linear-gradient(139deg, rgb(254, 34, 34) 0%, rgb(255, 140, 0, 0.856) 100%);
     overflow-x: hidden;
     background-repeat: no-repeat;
     background-size: cover;
