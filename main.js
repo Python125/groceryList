@@ -1,5 +1,5 @@
 let input = document.querySelector('.todo_input');
-let MainTodoContainer = document.getElementById('todos')
+let MainTodoContainer = document.getElementById('todos');
 let addingButton = document.querySelector('.add-item');
 let deleteAllBtn = document.querySelector('.deleteBtn');
 let completedButton = document.querySelector('.completed');
@@ -27,10 +27,10 @@ addingButton.addEventListener('click', function(e){
 
         let completeButton = document.createElement('button');
         completeButton.classList.add('completed');
-        completeButton.innerHTML = '<i class="fas fa-check"></i>';
+        completeButton.innerHTML = '<i class="fas fa-check"> Done</i>';
 
         let editBtn = document.createElement('button');
-        editBtn.innerHTML = '<i class="far fa-edit"></i>';
+        editBtn.innerHTML = '<i class="far fa-edit"> Edit</i>';
         editBtn.classList.add('editBtn');
         editBtn.onclick = function(){
             editWorking(liTag);
@@ -38,7 +38,7 @@ addingButton.addEventListener('click', function(e){
 
         let trashButton = document.createElement('button');
         trashButton.classList.add('trash');
-        trashButton.innerHTML = '<i class="fas fa-trash"></i>';
+        trashButton.innerHTML = '<i class="fas fa-trash"> Delete</i>';
     
 
         ulTag.appendChild(todoList);
