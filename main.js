@@ -25,6 +25,14 @@ addingButton.addEventListener('click', function(e){
         let buttonDiv = document.createElement('div');
         buttonDiv.classList.add('button');
 
+        let addingButton = document.createElement('button');
+        addingButton.classList.add('addingButton');
+        addingButton.innerHTML = '<i class="fas fa-plus add-item" onclick="addingButton()"> Add</i>';
+
+        let deleteAllBtn = document.createElement('button');
+        deleteAllBtn.classList.add('deleteAllBtn');
+        deleteAllBtn.innerHTML = '<i class="fas fa-trash-alt add-item deleteBtn" onclick="deleteAllElements()"> Clear</i>';
+
         let completeButton = document.createElement('button');
         completeButton.classList.add('completed');
         completeButton.innerHTML = '<i class="fas fa-check"> Done</i>';
