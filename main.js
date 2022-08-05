@@ -29,6 +29,7 @@ addingButton.addEventListener('click', function(e){
         addingButton.classList.add('addingButton');
         addingButton.innerHTML = '<i class="fas fa-plus add-item" onclick="addingButton()"> Add</i>';
 
+        
         let deleteAllBtn = document.createElement('button');
         deleteAllBtn.classList.add('deleteAllBtn');
         deleteAllBtn.innerHTML = '<i class="fas fa-trash-alt add-item deleteBtn" onclick="deleteAllElements()"> Clear</i>';
