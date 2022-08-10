@@ -1,7 +1,7 @@
 let input = document.querySelector('.todo_input');
 let MainTodoContainer = document.getElementById('todos');
 let addingButton = document.querySelector('.add-item');
-let deleteAllBtn = document.querySelector('.deleteBtn');
+let deleteAllButton = document.querySelector('.deleteButton');
 let completedButton = document.querySelector('.completed');
 let removeButton = document.querySelector('.trash');
 
@@ -30,18 +30,18 @@ addingButton.addEventListener('click', function(e){
         addingButton.innerHTML = '<i class="fas fa-plus add-item" onclick="addingButton()"> Add</i>';
 
         
-        let deleteAllBtn = document.createElement('button');
-        deleteAllBtn.classList.add('deleteAllBtn');
-        deleteAllBtn.innerHTML = '<i class="fas fa-trash-alt add-item deleteBtn" onclick="deleteAllElements()"> Clear</i>';
+        let deleteAllButton = document.createElement('button');
+        deleteAllButton.classList.add('deleteAllButton');
+        deleteAllButton.innerHTML = '<i class="fas fa-trash-alt add-item deleteButton" onclick="deleteAllElements()"> Clear</i>';
 
         let completeButton = document.createElement('button');
         completeButton.classList.add('completed');
         completeButton.innerHTML = '<i class="fas fa-check"> Done</i>';
 
-        let editBtn = document.createElement('button');
-        editBtn.innerHTML = '<i class="far fa-edit"> Edit</i>';
-        editBtn.classList.add('editBtn');
-        editBtn.onclick = function(){
+        let editButton = document.createElement('button');
+        editButton.innerHTML = '<i class="far fa-edit"> Edit</i>';
+        editButton.classList.add('editButton');
+        editButton.onclick = function(){
             editWorking(liTag);
         }
 
@@ -54,7 +54,7 @@ addingButton.addEventListener('click', function(e){
         todoList.appendChild(liTag);
         todoList.appendChild(buttonDiv);
         buttonDiv.appendChild(completeButton);
-        buttonDiv.appendChild(editBtn);
+        buttonDiv.appendChild(editButton);
         buttonDiv.appendChild(trashButton);
     
 
